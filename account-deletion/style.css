@@ -1,0 +1,133 @@
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: #182a25;
+  background: #f4f5f1;
+  line-height: 1.6;
+  color-scheme: light;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+main {
+  max-width: 44rem;
+  margin: auto;
+  padding: clamp(1.25rem, 5vw, 3rem);
+  background: white;
+  border: 1px solid #d7dfd8;
+  border-radius: 1.25rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 750;
+  font-size: 1.3rem;
+  margin-inline-end: auto;
+  letter-spacing: 0.035em;
+}
+.language-label {
+  font-size: 0.8rem;
+}
+h1 {
+  font-size: clamp(1.8rem, 6vw, 2.7rem);
+  line-height: 1.2;
+  margin-block: 2rem 1rem;
+}
+h2 {
+  font-size: 1.1rem;
+}
+section {
+  margin-block: 1.5rem;
+  padding: 1rem;
+  background: #f1f5f0;
+  border-radius: 0.7rem;
+}
+form {
+  margin-block: 1.5rem;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+input:not([type='checkbox']),
+select {
+  font: inherit;
+  border: 1px solid #879c91;
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  min-height: 3rem;
+  max-width: 100%;
+}
+input:not([type='checkbox']) {
+  width: 100%;
+  margin-block: 0.5rem 1rem;
+}
+button {
+  font: inherit;
+  font-weight: 600;
+  color: white;
+  background: #234e3d;
+  border: 2px solid transparent;
+  border-radius: 0.45rem;
+  min-height: 3rem;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  margin-block: 0.3rem;
+  margin-inline-end: 0.5rem;
+}
+.secondary {
+  background: white;
+  color: #234e3d;
+  border-color: #879c91;
+}
+.danger {
+  background: #9a2f28;
+}
+.warning {
+  padding: 1rem;
+  border-inline-start: 4px solid #946927;
+  background: #fff4db;
+}
+.confirmation {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.confirmation input {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-block: 0.2rem;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+:focus-visible {
+  outline: 3px solid #075fba;
+  outline-offset: 3px;
+}
+[hidden] {
+  display: none !important;
+}
+footer {
+  font-size: 0.85rem;
+  color: #415c4f;
+  margin-block-start: 2rem;
+}
+#message {
+  font-weight: 600;
+}
+#phone-hint {
+  font-size: 0.9rem;
+}
